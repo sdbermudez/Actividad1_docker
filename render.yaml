@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: deporte-app
+    env: docker
+    region: oregon
+    plan: free
+    dockerfilePath: ./Dockerfile
+    repo: https://github.com/tuusuario/deporte_app
+    branch: main
+    healthCheckPath: /
